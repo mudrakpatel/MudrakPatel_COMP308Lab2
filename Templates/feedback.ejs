@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Feedback</title>
+</head>
+<body>
+<h5 name="userFirstName"><%= tempCustomer.FirstName %> -|- <%= tempCustomer[0] %></h5><br/>
+<h5 name="userLastName"><%= tempCustomer.LastName %> -|- <%= tempCustomer[1] %></h5><br/>
+<h5 name="userCity"><%= tempCustomer.City %> -|- <%= tempCustomer[2] %></h5></br>
+<h5 name="userProvince"><%= tempCustomer.Province %> -|- <%= tempCustomer[3] %></h5></br>
+<h5 name="userEmailID"><%= tempCustomer.EmailID %> -|- <%= tempCustomer[4] %></h5></br>
+<form method="post" action="/feedback">
+Your comments: <textarea rows="4" cols="50" name="userFeedback">Your comments here...</textarea><br/>
+<input type="submit" value="Send feedback">
+</form>
+</body>
+</html>

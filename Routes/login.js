@@ -6,8 +6,7 @@ router.get("/login", function(request, response){
 });
 
 router.post("/login", function(request, response){
-    response.render("feedback.ejs", {userEmailID : request.body.userEmailID,
-                                        userPassword : request.body.userPassword});
+    
 });
 
 module.exports = router;
