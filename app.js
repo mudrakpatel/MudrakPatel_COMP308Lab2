@@ -3,6 +3,12 @@ var path = require("path");
 var app = express(); //express constructor function
 var mongoose = require("mongoose");
 var dbURL = "mongodb://localhost/comp308-lab2";
+var bodyParser = require('body-parser');
+
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+})); 
 
 mongoose.connect(dbURL, function(error){
     if(error){
