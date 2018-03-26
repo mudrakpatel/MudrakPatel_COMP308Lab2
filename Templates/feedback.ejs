@@ -3,12 +3,12 @@
 <title>Feedback</title>
 </head>
 <body>
-<h5 name="userFirstName"><%= routeCustomer.FirstName %></h5><br/>
-<h5 name="userLastName"><%= routeCustomer.LastName %></h5><br/>
-<h5 name="userCity"><%= routeCustomer.City %></h5></br>
-<h5 name="userProvince"><%= routeCustomer.Province %></h5></br>
-<h5 name="userEmailID"><%= routeCustomer.EmailID %></h5></br>
 <form method="post" action="/feedback">
+<input type="text" name="userFirstName" value="<%= routeCustomer.FirstName %>" readonly><br/>
+<input type="text" name="userLastName" value="<%= routeCustomer.LastName %>" readonly><br/>
+<input type="text" name="userCity" value="<%= routeCustomer.City %>" readonly></br>
+<input type="text" name="userProvince" value="<%= routeCustomer.Province %>" readonly></br>
+<input type="text" name="userEmailID" value="<%= routeCustomer.EmailID %>" readonly></br>
 Your comments: <textarea rows="4" cols="50" name="userFeedback">Your comments here...</textarea><br/>
 <input type="submit" value="Send feedback">
 </form>
